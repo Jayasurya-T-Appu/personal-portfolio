@@ -1,0 +1,15 @@
+﻿
+> temp-app@0.1.0 lint
+> eslint
+
+
+G:\Personal Website\src\app\page.tsx
+   19:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+   28:16  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  217:98  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+
+G:\Personal Website\src\components\FadeIn.tsx
+  24:53  warning  The ref value 'domRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'domRef.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+
+Ô£û 4 problems (2 errors, 2 warnings)
+
