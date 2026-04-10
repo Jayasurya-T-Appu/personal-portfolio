@@ -4,6 +4,7 @@ import { Nav } from "../components/Nav";
 import { ScrollToTop } from "../components/ScrollToTop";
 import { Loader } from "../components/Loader";
 import { FadeIn } from "../components/FadeIn";
+import { RESUME_DOWNLOAD_NAME, RESUME_PATH } from "../constants/resume";
 import Image from "next/image";
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
       
 
       <FadeIn delay={2200}>
-        <section className="pt-32 md:pt-48 pb-10 md:pb-32 px-6 md:px-12 max-w-6xl mx-auto flex flex-col items-center text-center">
+        <section id="about" className="pt-32 md:pt-48 pb-10 md:pb-32 px-6 md:px-12 max-w-6xl mx-auto flex flex-col items-center text-center">
           <div className="w-32 h-44 md:w-40 md:h-56 rounded-[2rem] overflow-hidden mb-8 md:mb-12 shadow-[0_12px_40px_rgba(0,0,0,0.08)] bg-white p-1">
           <div className="w-full h-full rounded-[1.8rem] overflow-hidden relative">
             <Image src="/profile.png" alt="Jayasurya T Appu" fill priority className="object-cover object-top" sizes="(max-width: 768px) 160px, 200px" />
@@ -30,11 +31,34 @@ export default function Home() {
           that power high-throughput applications. 
         </p>
         
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full max-w-[280px] sm:max-w-none mx-auto">
-            <a href="#work" className="w-full sm:w-auto"><Button className="w-full">View My Work</Button></a>
-            <a href="mailto:jayasuryawebdev@gmail.com" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto"><Button variant="secondary" className="w-full">Contact Me</Button></a>
-            
-            <div className="flex items-center justify-center gap-1 sm:gap-4 sm:ml-2 w-full sm:w-auto">
+          <div className="flex flex-col items-center justify-center gap-4 sm:gap-5 w-full max-w-[280px] sm:max-w-none mx-auto">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full">
+              <a href="#work" className="w-full sm:w-auto"><Button className="w-full">View My Work</Button></a>
+              <a href="mailto:jayasuryawebdev@gmail.com" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto"><Button variant="secondary" className="w-full">Contact Me</Button></a>
+            </div>
+            <a
+              href={RESUME_PATH}
+              download={RESUME_DOWNLOAD_NAME}
+              aria-label="Download resume as PDF"
+              className="group inline-flex items-center justify-center gap-2.5 rounded-full border border-black/10 bg-white px-5 py-2.5 sm:px-6 sm:py-3 text-[10px] sm:text-xs font-bold uppercase tracking-[0.12em] text-black shadow-[0_4px_20px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-black/15 hover:shadow-[0_8px_28px_rgba(0,0,0,0.08)]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.75}
+                stroke="currentColor"
+                className="h-4 w-4 shrink-0 text-black/55 transition-colors group-hover:text-black"
+                aria-hidden
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+              </svg>
+              <span>Download resume</span>
+              <span className="rounded-full bg-black/[0.06] px-2 py-0.5 text-[9px] font-bold tracking-wide text-black/55 group-hover:text-black/70">
+                PDF
+              </span>
+            </a>
+            <div className="flex items-center justify-center gap-4 sm:gap-6 sm:ml-0 w-full sm:w-auto">
               <a href="https://github.com/Jayasurya-T-Appu" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="p-3.5 bg-white border border-black/5 rounded-full hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all duration-300 text-black">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
               </a>
@@ -263,7 +287,10 @@ export default function Home() {
       <FadeIn>
         <footer className="mt-20 md:mt-40 text-center pb-3">
           <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-12 text-black">Let&apos;s build something great.</h2>
-          <a href="mailto:jayasuryawebdev@gmail.com" target="_blank" rel="noopener noreferrer"><Button className="!px-12 !py-6 !text-lg mx-auto">Get in touch</Button></a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5">
+            <a href="mailto:jayasuryawebdev@gmail.com" target="_blank" rel="noopener noreferrer"><Button className="!px-12 !py-6 !text-lg mx-auto sm:mx-0">Get in touch</Button></a>
+            <a href={RESUME_PATH} download={RESUME_DOWNLOAD_NAME}><Button variant="secondary" className="!px-12 !py-6 !text-lg mx-auto sm:mx-0">Download resume</Button></a>
+          </div>
           
           <div className="flex gap-6 items-center justify-center mt-6 md:mt-12">
             <a href="https://github.com/Jayasurya-T-Appu" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="p-4 bg-white border border-black/5 rounded-full hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all duration-300 text-black">
