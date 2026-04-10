@@ -78,7 +78,7 @@ export default function Home() {
                  Optimized database queries and backend workflows, improving API response times by 30–50%.
                </li>
                <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                 Led a team of 2 developers, managing task distribution and code reviews.
+                 Led a team of 5 developers, managing task distribution and code reviews.
                </li>
              </ul>
            </div>
@@ -110,23 +110,20 @@ export default function Home() {
 
         <Card className="flex flex-col lg:flex-row gap-12 group">
            <div className="lg:w-1/3">
-             <h4 className="text-2xl font-bold tracking-tight mb-2 text-black">Paco Studios</h4>
-             <div className="text-[#4D4D4D] font-medium uppercase tracking-widest text-sm mb-4">Software Dev (Freelance)</div>
-             <p className="text-black/40 text-sm font-bold tracking-wider">2024 – PRESENT</p>
+             <h4 className="text-2xl font-bold tracking-tight mb-2 text-black">Carclenx (Pexa)</h4>
+             <div className="text-[#4D4D4D] font-medium uppercase tracking-widest text-sm mb-4">Full Stack Developer</div>
+             <p className="text-black/40 text-sm font-bold tracking-wider">JAN 2022 – JUNE 2022</p>
            </div>
            <div className="lg:w-2/3">
              <ul className="space-y-4 text-lg text-[#4D4D4D] leading-relaxed relative">
                <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                 Delivered production-grade applications handling end-to-end backend architecture and deployment.
+                 Developed secure RESTful APIs and integrated third-party services.
                </li>
                <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                 Led end-to-end development, including requirement gathering, API development, and frontend integration.
+                 Built admin dashboards with Angular, ensuring real-time backend integration.
                </li>
                <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                 Designed and deployed scalable backend systems for client projects using Node.js and MongoDB.
-               </li>
-               <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                 Built and deployed client websites: lorrygopvt.com, poornaya.com, and pacostudios.org.
+                 Improved application reliability by ensuring consistent frontend-backend communication.
                </li>
              </ul>
            </div>
@@ -134,13 +131,39 @@ export default function Home() {
       </section>
       </FadeIn>
 
-
-
+      <FadeIn>
+        <section className="px-6 md:px-12 max-w-6xl mx-auto mt-10 md:mt-32">
+          <TintedCard type="peach" className="relative overflow-hidden group !p-10 md:!p-16 lg:!p-20">
+            <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16 relative z-10">
+              <div className="w-28 h-28 md:w-40 md:h-40 lg:w-48 lg:h-48 bg-white rounded-[2rem] shadow-[0_12px_40px_rgba(0,0,0,0.08)] flex items-center justify-center shrink-0 relative overflow-hidden border border-black/5 transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-3">
+                <Image src="/paco_icon.png" alt="PACO Studios" fill className="object-contain p-4 md:p-6" sizes="(max-width: 768px) 112px, (max-width: 1024px) 160px, 192px" />
+              </div>
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 text-black">
+                  Co-founder at <br />
+                  <span className="whitespace-nowrap"><span className="text-[#EA6F00]">PACO</span> <span className="text-black">Studios</span></span>
+                </h3>
+                <p className="text-xl md:text-2xl text-[#4D4D4D] leading-relaxed mb-8 max-w-3xl mx-auto md:mx-0">
+                  From pixel-perfect websites to immersive 3D experiences—we are your modern development partner. We blend creativity with technology to craft scalable, meaningful digital products that drive results and empower businesses to stand out.
+                </p>
+                <a href="https://www.pacostudios.org/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="secondary" className="!bg-white border !border-black/5 hover:!border-black/20 shadow-sm transition-all duration-300 hover:shadow-md !px-8 !py-4 !text-lg">
+                    Visit pacostudios.org
+                  </Button>
+                </a>
+              </div>
+            </div>
+            
+            {/* Decorative background element */}
+            <div className="absolute -right-10 -bottom-10 w-80 h-80 bg-[#EA6F00]/15 blur-3xl rounded-full z-0 pointer-events-none transition-transform duration-700 group-hover:scale-150"></div>
+          </TintedCard>
+        </section>
+      </FadeIn>
 
       <FadeIn>
         <section id="skills" className="px-6 md:px-12 max-w-6xl mx-auto space-y-10 mt-20 md:mt-40">
            <h2 className="text-3xl font-extrabold mb-12 px-6 tracking-tight text-black">Technical Arsenal</h2>
-         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <TintedCard type="gray" className="!p-6 md:!p-8 flex flex-col items-start h-full">
               <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">Systems</span>
               <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">Node.js, Express.js, Python, Flask, Django</p>
@@ -160,6 +183,16 @@ export default function Home() {
               <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">Infrastructure</span>
               <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">Docker, Nginx, Google Cloud, Docker Compose</p>
             </TintedCard>
+
+            <TintedCard type="gray" className="!p-6 md:!p-8 flex flex-col items-start h-full">
+              <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">AI Tooling</span>
+              <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">Cursor, ChatGPT, Google Antigravity</p>
+            </TintedCard>
+
+            <TintedCard type="mint" className="!p-6 md:!p-8 flex flex-col items-start h-full">
+              <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">AI &amp; ML</span>
+              <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">RAG, embeddings, machine learning, NLP, computer vision</p>
+            </TintedCard>
          </div>
         </section>
       </FadeIn>
@@ -169,8 +202,15 @@ export default function Home() {
         <section id="work" className="px-6 md:px-12 max-w-6xl mx-auto space-y-10 mt-20 md:mt-40">
           <h2 className="text-3xl font-extrabold mb-12 px-6 tracking-tight text-black">Featured Projects</h2>
         
-        <TintedCard type="blue" className="relative group overflow-hidden">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 relative z-10">
+        <TintedCard type="blue" className="relative group overflow-hidden select-none pointer-events-none">
+          {/* Maintenance Overlay */}
+          <div className="absolute inset-0 z-50 flex items-center justify-center text-center p-4 bg-white/10 backdrop-blur-[1px]">
+            <div className="bg-black/90 text-white px-6 py-3 rounded-full font-bold tracking-widest uppercase text-sm shadow-xl border border-white/10">
+              Under Maintenance
+            </div>
+          </div>
+
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 relative z-10 opacity-70">
             <div className="lg:w-1/2 flex flex-col justify-center">
                <h3 className="text-3xl lg:text-4xl font-extrabold tracking-tight mb-4 lg:mb-6 text-black">Microservices E-commerce</h3>
                <p className="text-lg lg:text-xl text-[#4D4D4D] leading-relaxed mb-6 lg:mb-8">
