@@ -230,8 +230,15 @@ export default function Home() {
           </div>
         </TintedCard>
 
-        <TintedCard type="mint" className="relative group overflow-hidden">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 relative z-10">
+        <TintedCard type="mint" className="relative group overflow-hidden select-none pointer-events-none">
+          {/* Maintenance Overlay */}
+          <div className="absolute inset-0 z-50 flex items-center justify-center text-center p-4 bg-white/10 backdrop-blur-[1px]">
+            <div className="bg-black/90 text-white px-6 py-3 rounded-full font-bold tracking-widest uppercase text-sm shadow-xl border border-white/10">
+              Under Maintenance
+            </div>
+          </div>
+
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 relative z-10 opacity-70">
             <div className="lg:w-1/2 flex flex-col justify-center">
                <h3 className="text-3xl lg:text-4xl font-extrabold tracking-tight mb-4 lg:mb-6 text-black">AI Chat with RAG</h3>
                <p className="text-lg lg:text-xl text-[#4D4D4D] leading-relaxed mb-6 lg:mb-8">
