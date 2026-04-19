@@ -3,6 +3,7 @@ import { ProjectGallery } from "../components/ProjectGallery";
 import { Button } from "../components/Button";
 import { Nav } from "../components/Nav";
 import { ScrollToTop } from "../components/ScrollToTop";
+import { WhatsAppButton } from "../components/WhatsAppButton";
 import { Loader } from "../components/Loader";
 import { FadeIn } from "../components/FadeIn";
 import { RESUME_DOWNLOAD_NAME, RESUME_PATH } from "../constants/resume";
@@ -19,7 +20,7 @@ export default function Home() {
         <section id="about" className="pt-32 md:pt-48 pb-10 md:pb-32 px-6 md:px-12 max-w-6xl mx-auto flex flex-col items-center text-center">
           <div className="w-32 h-44 md:w-40 md:h-56 rounded-[2rem] overflow-hidden mb-8 md:mb-12 shadow-[0_12px_40px_rgba(0,0,0,0.08)] bg-white p-1">
           <div className="w-full h-full rounded-[1.8rem] overflow-hidden relative">
-            <Image src="/profile.png" alt="Jayasurya T Appu" fill priority className="object-cover object-top" sizes="(max-width: 768px) 160px, 200px" />
+            <Image src="/profile image.png" alt="Jayasurya T Appu" fill priority className="object-cover object-top" sizes="(max-width: 768px) 160px, 200px" />
           </div>
         </div>
         
@@ -310,6 +311,7 @@ export default function Home() {
         </footer>
       </FadeIn>
 
+      <WhatsAppButton />
       <ScrollToTop />
     </div>
   );
