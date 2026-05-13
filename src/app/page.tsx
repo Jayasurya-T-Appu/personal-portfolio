@@ -112,7 +112,34 @@ export default function Home() {
 
         <Card className="flex flex-col lg:flex-row gap-12 group">
            <div className="lg:w-1/3">
-             <h4 className="text-2xl font-bold tracking-tight mb-2 text-black">Quest Innovative Sol.</h4>
+             <h4 className="text-2xl font-bold tracking-tight mb-2 text-black">Cordova Educational Solutions</h4>
+             <div className="text-[#4D4D4D] font-medium uppercase tracking-widest text-sm mb-4">Software Developer</div>
+             <p className="text-black/40 text-sm font-bold tracking-wider">OCT 2024 – JUNE 2025</p>
+           </div>
+           <div className="lg:w-2/3">
+             <ul className="space-y-4 text-lg text-[#4D4D4D] leading-relaxed relative">
+               <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
+                 Developed and maintained backend APIs and frontend modules for an LMS (Learning Management System) platform using Node.js and Angular.
+               </li>
+               <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
+                 Built new REST API endpoints and UI features to support internal workflows and user-facing functionality.
+               </li>
+               <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
+                 Debugged production issues and optimized backend logic and frontend performance to improve application reliability and responsiveness.
+               </li>
+               <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
+                 Worked on authentication flows, API integrations, and feature enhancements for production applications.
+               </li>
+               <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
+                 Collaborated with team members to implement new features, fix bugs, and maintain stable application releases.
+               </li>
+             </ul>
+           </div>
+        </Card>
+
+        <Card className="flex flex-col lg:flex-row gap-12 group">
+           <div className="lg:w-1/3">
+             <h4 className="text-2xl font-bold tracking-tight mb-2 text-black">Quest Innovative Solutions</h4>
              <div className="text-[#4D4D4D] font-medium uppercase tracking-widest text-sm mb-4">Junior Software Engineer</div>
              <p className="text-black/40 text-sm font-bold tracking-wider">DEC 2022 – SEPT 2024</p>
            </div>
@@ -157,34 +184,7 @@ export default function Home() {
       </section>
       </FadeIn>
 
-      <FadeIn>
-        <section className="px-6 md:px-12 max-w-6xl mx-auto mt-10 md:mt-32">
-          <TintedCard type="peach" className="relative overflow-hidden group !p-10 md:!p-16 lg:!p-20">
-            <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16 relative z-10">
-              <div className="w-28 h-28 md:w-40 md:h-40 lg:w-48 lg:h-48 bg-white rounded-[2rem] shadow-[0_12px_40px_rgba(0,0,0,0.08)] flex items-center justify-center shrink-0 relative overflow-hidden border border-black/5 transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-3">
-                <Image src="/paco_icon.png" alt="PACO Studios" fill className="object-contain p-4 md:p-6" sizes="(max-width: 768px) 112px, (max-width: 1024px) 160px, 192px" />
-              </div>
-              <div className="flex-1 text-center md:text-left">
-                <h3 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 text-black">
-                  Co-founder at <br />
-                  <span className="whitespace-nowrap"><span className="text-[#EA6F00]">PACO</span> <span className="text-black">Studios</span></span>
-                </h3>
-                <p className="text-xl md:text-2xl text-[#4D4D4D] leading-relaxed mb-8 max-w-3xl mx-auto md:mx-0">
-                  From pixel-perfect websites to immersive 3D experiences—we are your modern development partner. We blend creativity with technology to craft scalable, meaningful digital products that drive results and empower businesses to stand out.
-                </p>
-                <a href="https://www.pacostudios.org/" target="_blank" rel="noopener noreferrer">
-                  <Button variant="secondary" className="!bg-white border !border-black/5 hover:!border-black/20 shadow-sm transition-all duration-300 hover:shadow-md !px-8 !py-4 !text-lg">
-                    Visit pacostudios.org
-                  </Button>
-                </a>
-              </div>
-            </div>
-            
-            {/* Decorative background element */}
-            <div className="absolute -right-10 -bottom-10 w-80 h-80 bg-[#EA6F00]/15 blur-3xl rounded-full z-0 pointer-events-none transition-transform duration-700 group-hover:scale-150"></div>
-          </TintedCard>
-        </section>
-      </FadeIn>
+
 
       <FadeIn>
         <section id="skills" className="px-6 md:px-12 max-w-6xl mx-auto space-y-10 mt-20 md:mt-40">
@@ -228,21 +228,21 @@ export default function Home() {
         <section id="work" className="px-6 md:px-12 max-w-6xl mx-auto space-y-10 mt-20 md:mt-40">
           <h2 className="text-3xl font-extrabold mb-12 px-6 tracking-tight text-black">Featured Projects</h2>
         
-        <TintedCard type="blue" className="relative group overflow-hidden select-none pointer-events-none">
-          {/* Maintenance Overlay */}
-          <div className="absolute inset-0 z-50 flex items-center justify-center text-center p-4 bg-white/10 backdrop-blur-[1px]">
-            <div className="bg-black/90 text-white px-6 py-3 rounded-full font-bold tracking-widest uppercase text-sm shadow-xl border border-white/10">
-              Under Maintenance
-            </div>
-          </div>
-
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 relative z-10 opacity-70">
+        <TintedCard type="blue" className="relative group overflow-hidden">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 relative z-10">
             <div className="lg:w-1/2 flex flex-col justify-center">
                <h3 className="text-3xl lg:text-4xl font-extrabold tracking-tight mb-4 lg:mb-6 text-black">Microservices E-commerce</h3>
-               <p className="text-lg lg:text-xl text-[#4D4D4D] leading-relaxed mb-6 lg:mb-8">
+               <p className="text-lg lg:text-xl text-[#4D4D4D] leading-relaxed mb-8">
                  Designed and implemented a highly-scalable event-driven backend system. 
                  Utilized Kafka for event streaming and gRPC for blazing-fast inter-service communication.
                </p>
+               
+               <a href="https://github.com/Jayasurya-T-Appu/Ecommerce_microservice_docker" target="_blank" rel="noopener noreferrer" className="mb-10 inline-block pointer-events-auto">
+                 <Button variant="primary" className="!px-8 !py-3.5 !text-xs !rounded-xl border-2 border-black/20 hover:border-black transition-all duration-300 shadow-lg">
+                   View Repository
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="ml-1"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                 </Button>
+               </a>
                <div className="flex flex-wrap gap-3">
                  <span className="bg-white/50 px-4 py-2 rounded-full text-sm font-bold text-black border border-black/5 backdrop-blur-sm">Node.js</span>
                  <span className="bg-white/50 px-4 py-2 rounded-full text-sm font-bold text-black border border-black/5 backdrop-blur-sm">Kafka</span>
