@@ -28,6 +28,12 @@ html {
   scroll-behavior: smooth;
 }
 
+a,
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);

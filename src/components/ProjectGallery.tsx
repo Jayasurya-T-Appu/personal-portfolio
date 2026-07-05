@@ -64,9 +64,9 @@ export function ProjectGallery({ images }: { images: Screenshot[] }) {
           >
             {/* Window Header */}
             <div className="h-6 bg-[#1A1A1A] border-b border-white/5 flex items-center px-3 gap-1.5 shrink-0">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#FF5F56]" />
-              <div className="w-1.5 h-1.5 rounded-full bg-[#FFBD2E]" />
-              <div className="w-1.5 h-1.5 rounded-full bg-[#27C93F]" />
+              <div className="w-1.5 h-1.5 rounded-full bg-white/70" />
+              <div className="w-1.5 h-1.5 rounded-full bg-white/50" />
+              <div className="w-1.5 h-1.5 rounded-full bg-white/30" />
             </div>
             
             <div className="relative flex-1 bg-white">

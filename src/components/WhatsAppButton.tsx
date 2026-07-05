@@ -9,13 +9,14 @@ export function WhatsAppButton() {
       href="https://wa.me/+917012399476"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-[6.5rem] right-8 z-50 p-4 rounded-full bg-[#25D366] text-white shadow-[0_12px_24px_rgba(0,0,0,0.15)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_32px_rgba(37,211,102,0.35)] flex items-center justify-center hover:scale-105"
+      className="fixed bottom-20 right-4 md:bottom-[6.5rem] md:right-8 z-50 p-3 md:p-4 rounded-full bg-black text-white shadow-[0_12px_24px_rgba(0,0,0,0.15)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_32px_rgba(0,0,0,0.35)] flex items-center justify-center hover:scale-105"
       aria-label="Contact on WhatsApp"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="26"
-        height="26"
+        width="20"
+        height="20"
+        className="md:w-[26px] md:h-[26px]"
         viewBox="0 0 24 24"
         fill="currentColor"
       >
