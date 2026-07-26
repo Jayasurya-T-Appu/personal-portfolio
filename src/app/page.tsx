@@ -93,25 +93,34 @@ export default function Home() {
                   <div className="lg:w-2/3">
                     <ul className="space-y-4 text-lg text-[#4D4D4D] leading-relaxed relative">
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Designed and scaled backend systems handling <strong className="text-black font-bold">~1000 requests/sec</strong> in production.
+                        Designed and delivered scalable backend services and high-performance REST APIs powering production web and mobile applications, successfully supporting production traffic of <strong className="text-black font-bold">~1,000 requests per second</strong>.
                       </li>
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Built Worker & Staff Analytics system, reducing cancellation rates by <strong className="text-black font-bold">~80%</strong> through data-driven task assignment.
+                        Engineered asynchronous processing pipelines using <strong className="text-black font-bold">Redis Streams</strong> and background worker services, significantly improving application responsiveness by decoupling long-running operations from the request lifecycle.
                       </li>
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Engineered automated Payroll Processing system for <strong className="text-black font-bold">~200 employees</strong> using message queues, reducing manual workload by <strong className="text-black font-bold">~70–80%</strong>.
+                        Architected and implemented a <strong className="text-black font-bold">Worker & Staff Analytics</strong> module, optimizing task allocation logic and contributing to an <strong className="text-black font-bold">80% reduction in service cancellations</strong>.
                       </li>
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Migrated WhatsApp automation from third-party dependency to an in-house system, reducing external costs and driving a <strong className="text-black font-bold">~20% increase</strong> in lead generation.
+                        Designed and implemented secure authentication, authorization, session lifecycle management, and <strong className="text-black font-bold">Role-Based Access Control (RBAC)</strong>, strengthening application security across multiple user roles and administrative workflows.
                       </li>
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Stabilized legacy backend systems by fixing exception handling and server issues, reducing downtime and preventing missed requests.
+                        Architected <strong className="text-black font-bold">Finite State Machine (FSM)-driven backend workflows</strong> to manage conversational state transitions and complex business processes, improving maintainability and reducing workflow complexity.
                       </li>
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Optimized database queries and backend workflows, improving API response times by <strong className="text-black font-bold">30–50%</strong>.
+                        Designed a distributed payroll management system that <strong className="text-black font-bold">reduced manual HR effort by approximately 70–80%</strong> through workflow automation.
                       </li>
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Led a <strong className="text-black font-bold">team of 5 developers</strong>, managing task distribution and code reviews.
+                        Optimized MongoDB schemas, indexing strategies, aggregation pipelines, cursor-based pagination, and geospatial queries, <strong className="text-black font-bold">reducing API response times by 30–50%</strong> for data-intensive endpoints.
+                      </li>
+                      <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
+                        Designed resilient integrations with messaging platforms and payment gateways by implementing validation, retry mechanisms, and fault-tolerant error handling to ensure reliable communication between distributed services.
+                      </li>
+                      <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
+                        Developed Angular-based user interfaces and integrated frontend components with backend APIs to deliver seamless end-to-end application functionality.
+                      </li>
+                      <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
+                        Collaborated with engineering teams to define API contracts, review backend architecture, and deliver production-ready solutions following Clean Architecture principles and backend engineering best practices.
                       </li>
                     </ul>
                   </div>
@@ -134,19 +143,22 @@ export default function Home() {
                   <div className="lg:w-2/3">
                     <ul className="space-y-4 text-lg text-[#4D4D4D] leading-relaxed relative">
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Developed and maintained backend APIs and frontend modules for an LMS (Learning Management System) platform using Node.js and Angular.
+                        Developed and maintained scalable backend services and REST APIs supporting production <strong className="text-black font-bold">Learning Management System (LMS)</strong> and business applications.
                       </li>
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Built new REST API endpoints and UI features to support internal workflows and user-facing functionality.
+                        Modernized legacy backend modules by decomposing tightly coupled code into reusable components and optimizing core algorithms using efficient data structures, improving code maintainability while increasing processing performance by approximately <strong className="text-black font-bold">20–40%</strong>.
                       </li>
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Debugged production issues and optimized backend logic and frontend performance to improve application reliability and responsiveness.
+                        Optimized database queries and backend business logic to improve application responsiveness and ensure consistent data handling across production systems.
                       </li>
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Worked on authentication flows, API integrations, and feature enhancements for production applications.
+                        Worked across the stack by developing <strong className="text-black font-bold">React.js features</strong>, enhancing existing user interfaces, and integrating frontend components with backend services to deliver complete application functionality.
                       </li>
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Collaborated with team members to implement new features, fix bugs, and maintain stable application releases.
+                        Collaborated with developers and product stakeholders to translate business requirements into reliable, production-ready software solutions.
+                      </li>
+                      <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
+                        Investigated production issues through debugging, root cause analysis, and backend optimization, improving application reliability and overall system stability.
                       </li>
                     </ul>
                   </div>
@@ -162,23 +174,35 @@ export default function Home() {
                 <Card className="flex flex-col lg:flex-row gap-12 group">
                   <div className="lg:w-1/3">
                     <div className="md:hidden inline-block mb-2 px-2.5 py-1 rounded-full bg-black/5 text-[11px] font-bold text-black/60 tracking-wider">2022</div>
-                    <h4 className="text-2xl font-bold tracking-tight mb-2 text-black">Quest Innovative Solutions</h4>
+                    <h4 className="text-2xl font-bold tracking-tight mb-2 text-black">Quest Innovative Solution</h4>
                     <div className="text-[#4D4D4D] font-medium uppercase tracking-widest text-sm mb-4">Junior Software Engineer</div>
                     <p className="text-black/40 text-sm font-bold tracking-wider">DEC 2022 – SEPT 2024</p>
                   </div>
                   <div className="lg:w-2/3">
                     <ul className="space-y-4 text-lg text-[#4D4D4D] leading-relaxed relative">
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Designed and developed <strong className="text-black font-bold">20+ REST APIs</strong>, improving backend efficiency and reducing manual processing workflows.
+                        Developed and maintained <strong className="text-black font-bold">30+ REST APIs</strong> for multiple client applications using Node.js and Express.js, delivering scalable backend services for booking systems and other business solutions.
                       </li>
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Built backend services using Node.js and Python (Django) for business-critical applications.
+                        Built reusable backend modules and business logic that accelerated feature development while following clean coding and software engineering best practices.
                       </li>
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Optimized backend performance through efficient query design and logic improvements.
+                        Modernized legacy backend modules by refactoring tightly coupled code into reusable components, <strong className="text-black font-bold">improving maintainability, readability, and long-term code quality</strong>.
                       </li>
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Integrated frontend applications (React, Angular) with backend APIs, ensuring stable and efficient data flow.
+                        Designed and optimized relational database queries and backend business logic, improving application performance, data consistency, and overall system reliability.
+                      </li>
+                      <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
+                        Integrated third-party APIs and external services to streamline business workflows and extend application capabilities across multiple client projects.
+                      </li>
+                      <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
+                        Developed responsive React.js user interfaces and integrated frontend components with backend APIs to deliver seamless end-to-end application functionality.
+                      </li>
+                      <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
+                        Diagnosed and resolved backend and frontend production issues through debugging, code optimization, and root cause analysis, improving software stability and reducing recurring defects.
+                      </li>
+                      <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
+                        Collaborated with senior developers throughout the software development lifecycle, contributing to feature implementation, testing, deployment, and continuous enhancement of production applications.
                       </li>
                     </ul>
                   </div>
@@ -200,13 +224,19 @@ export default function Home() {
                   <div className="lg:w-2/3">
                     <ul className="space-y-4 text-lg text-[#4D4D4D] leading-relaxed relative">
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Developed secure RESTful APIs and integrated third-party services.
+                        Developed responsive <strong className="text-black font-bold">Angular-based administrative dashboards</strong> and integrated frontend components with backend APIs to deliver intuitive and efficient user experiences.
                       </li>
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Built admin dashboards with Angular, ensuring real-time backend integration.
+                        Built and maintained RESTful APIs using Node.js and Express.js to support internal business applications and operational workflows.
                       </li>
                       <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
-                        Improved application reliability by ensuring consistent frontend-backend communication.
+                        Integrated third-party APIs and external services to extend platform capabilities and enable seamless data exchange across business systems.
+                      </li>
+                      <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
+                        Collaborated across frontend and backend development to implement reliable, maintainable, and production-ready application features.
+                      </li>
+                      <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
+                        Investigated and resolved application issues through debugging, testing, and code enhancements, improving software stability, maintainability, and overall application quality.
                       </li>
                     </ul>
                   </div>
@@ -226,56 +256,56 @@ export default function Home() {
             <FadeIn delay={0}>
               <TintedCard shine type="gray" className="!p-6 md:!p-8 flex flex-col items-start h-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">Languages</span>
-                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">JavaScript, Python, HTML, CSS</p>
+                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">JavaScript (ES6+), TypeScript, SQL, C</p>
               </TintedCard>
             </FadeIn>
 
             <FadeIn delay={80}>
               <TintedCard shine type="mint" className="!p-6 md:!p-8 flex flex-col items-start h-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">Backend</span>
-                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">Node.js, Express.js, FastAPI, Flask, Django</p>
+                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">Node.js, Express.js, REST APIs, Redis Streams, Asynchronous Processing, FSM</p>
               </TintedCard>
             </FadeIn>
 
             <FadeIn delay={160}>
               <TintedCard shine type="blue" className="!p-6 md:!p-8 flex flex-col items-start h-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">Frontend</span>
-                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">React.js, Next.js, Angular</p>
+                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">Angular, React.js, HTML5, CSS3</p>
               </TintedCard>
             </FadeIn>
 
             <FadeIn delay={240}>
               <TintedCard shine type="peach" className="!p-6 md:!p-8 flex flex-col items-start h-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">Architecture</span>
-                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">Microservices, REST APIs, gRPC, System Design, Web Sockets</p>
+                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">RESTful API Design, Clean Architecture, Database Schema Design, Distributed Systems</p>
               </TintedCard>
             </FadeIn>
 
             <FadeIn delay={320}>
               <TintedCard shine type="gray" className="!p-6 md:!p-8 flex flex-col items-start h-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">Database &amp; Data</span>
-                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">MongoDB, SQL, Redis, ChromaDB, Kafka</p>
+                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">MongoDB, MySQL, Redis</p>
               </TintedCard>
             </FadeIn>
 
             <FadeIn delay={400}>
               <TintedCard shine type="mint" className="!p-6 md:!p-8 flex flex-col items-start h-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">Cloud &amp; Infrastructure</span>
-                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">AWS (EC2, S3, IAM, VPC, CloudWatch), Docker, Nginx, Google Cloud</p>
+                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">AWS (Basics), Vercel, Docker, Nginx</p>
               </TintedCard>
             </FadeIn>
 
             <FadeIn delay={480}>
               <TintedCard shine type="blue" className="!p-6 md:!p-8 flex flex-col items-start h-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">Tools &amp; Workflow</span>
-                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">Git, Cursor, Postman, ChatGPT, Google Antigravity</p>
+                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">Git, GitHub, Postman, Linux, VS Code</p>
               </TintedCard>
             </FadeIn>
 
             <FadeIn delay={560}>
               <TintedCard shine type="peach" className="!p-6 md:!p-8 flex flex-col items-start h-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">AI &amp; ML</span>
-                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">RAG, LLM Integrations, Vector Embeddings, SentenceTransformers, NLP, Computer Vision</p>
+                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">Retrieval-Augmented Generation (RAG), Vector Embeddings, ChromaDB, Hugging Face, LLMs</p>
               </TintedCard>
             </FadeIn>
           </div>
@@ -290,7 +320,7 @@ export default function Home() {
           <TintedCard type="blue" className="relative group overflow-hidden">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 relative z-10">
               <div className="lg:w-1/2 flex flex-col justify-center">
-                <h3 className="text-3xl lg:text-4xl font-extrabold tracking-tight mb-4 lg:mb-6 text-black">Microservices E-commerce</h3>
+                <h3 className="text-3xl lg:text-4xl font-extrabold tracking-tight mb-4 lg:mb-6 text-black">Distributed Commerce Platform</h3>
                 <p className="text-lg lg:text-xl text-[#4D4D4D] leading-relaxed mb-8">
                   Designed and implemented a highly-scalable event-driven backend system.
                   Utilized Kafka for event streaming and gRPC for blazing-fast inter-service communication.
@@ -318,7 +348,7 @@ export default function Home() {
           <TintedCard type="mint" className="relative group overflow-hidden">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 relative z-10">
               <div className="lg:w-1/2 flex flex-col justify-center">
-                <h3 className="text-3xl lg:text-4xl font-extrabold tracking-tight mb-4 lg:mb-6 text-black">AI Chat with RAG</h3>
+                <h3 className="text-3xl lg:text-4xl font-extrabold tracking-tight mb-4 lg:mb-6 text-black">Enterprise Knowledge Platform</h3>
                 <p className="text-lg lg:text-xl text-[#4D4D4D] leading-relaxed mb-8">
                   Developed a sophisticated backend for semantic search. Integrated a local Mistral LLM and ChromaDB for instant vector retrieval against document embeddings.
                 </p>
@@ -351,7 +381,7 @@ export default function Home() {
           <TintedCard type="peach" className="relative group overflow-hidden">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 relative z-10">
               <div className="lg:w-1/2 flex flex-col justify-center">
-                <h3 className="text-3xl lg:text-4xl font-extrabold tracking-tight mb-4 lg:mb-6 text-black">Forge Build Tool</h3>
+                <h3 className="text-3xl lg:text-4xl font-extrabold tracking-tight mb-4 lg:mb-6 text-black">Forge – Build Automation Tool</h3>
                 <p className="text-lg lg:text-xl text-[#4D4D4D] leading-relaxed mb-8">
                   A lightweight compiler driver and native build system written in C. Recursively scans project directories, generates a dependency build plan, automatically structures the build directories, compiles files via GCC, and links them into a final executable.
                 </p>
@@ -381,7 +411,7 @@ export default function Home() {
                   <div className="relative flex-1 bg-[#1E1E1E]">
                     <Image
                       src="/forgeTool.webp"
-                      alt="Forge Build Tool Interface"
+                      alt="Forge – Build Automation Tool Interface"
                       fill
                       className="object-cover p-2"
                       sizes="(max-width: 1024px) 100vw, 50vw"
