@@ -14,25 +14,25 @@ export default function Home() {
     <div className="min-h-screen bg-[#F2F2F2] font-sans overflow-x-hidden selection:bg-black selection:text-white">
       <Loader />
       <Nav />
-      
+
 
       <FadeIn delay={2200}>
         <section id="about" className="pt-32 md:pt-48 pb-10 md:pb-32 px-6 md:px-12 max-w-6xl mx-auto flex flex-col items-center text-center">
           <div className="w-40 h-56 md:w-52 md:h-72 rounded-[2rem] overflow-hidden mb-8 md:mb-12 shadow-[0_12px_40px_rgba(0,0,0,0.08)] bg-white p-1">
-          <div className="w-full h-full rounded-[1.8rem] overflow-hidden relative">
-            <Image src="/profile_pic.webp" alt="Jayasurya T Appu" fill priority className="object-cover object-top" sizes="(max-width: 768px) 200px, 260px" />
+            <div className="w-full h-full rounded-[1.8rem] overflow-hidden relative">
+              <Image src="/profile_pic.webp" alt="Jayasurya T Appu" fill priority className="object-cover object-top" sizes="(max-width: 768px) 200px, 260px" />
+            </div>
           </div>
-        </div>
-        
-        <h1 className="text-4xl sm:text-5xl md:text-[5.5rem] font-extrabold tracking-tight leading-[1.1] mb-8 md:mb-10 text-black">
-          Architecting Scalable <br/> Backend Systems.
-        </h1>
-        
-        <p className="text-lg md:text-2xl text-[#4D4D4D] max-w-3xl font-light mb-10 md:mb-14 leading-relaxed tracking-wide">
-          Hi, I&apos;m Jayasurya T Appu. A Backend Engineer specializing in Node.js, Python, and microservices 
-          that power high-throughput applications. 
-        </p>
-        
+
+          <h1 className="text-4xl sm:text-5xl md:text-[5.5rem] font-extrabold tracking-tight leading-[1.1] mb-8 md:mb-10 text-black">
+            Architecting Scalable <br /> Backend Systems.
+          </h1>
+
+          <p className="text-lg md:text-2xl text-[#4D4D4D] max-w-3xl font-light mb-10 md:mb-14 leading-relaxed tracking-wide">
+            Hi, I&apos;m Jayasurya T Appu. A Backend Engineer specializing in Node.js, Python, and microservices
+            that power high-throughput applications.
+          </p>
+
           <div className="flex flex-col items-center justify-center gap-4 sm:gap-5 w-full max-w-[280px] sm:max-w-none mx-auto">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full">
               <a href="#work" className="w-full sm:w-auto"><Button className="w-full">View My Work</Button></a>
@@ -62,10 +62,10 @@ export default function Home() {
             </a>
             <div className="flex items-center justify-center gap-4 sm:gap-6 sm:ml-0 w-full sm:w-auto">
               <a href="https://github.com/Jayasurya-T-Appu" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="p-3.5 bg-white border border-black/5 rounded-full hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all duration-300 text-black">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
               </a>
               <a href="https://www.linkedin.com/in/jayasuryatappu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="p-3.5 bg-white border border-black/5 rounded-full hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all duration-300 text-black">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
               </a>
             </div>
           </div>
@@ -221,8 +221,8 @@ export default function Home() {
 
       <FadeIn>
         <section id="skills" className="px-6 md:px-12 max-w-6xl mx-auto space-y-10 mt-20 md:mt-40">
-           <h2 className="text-3xl font-extrabold mb-12 px-6 tracking-tight text-black">Technical Arsenal</h2>
-         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <h2 className="text-3xl font-extrabold mb-12 px-6 tracking-tight text-black">Technical Arsenal</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <FadeIn delay={0}>
               <TintedCard shine type="gray" className="!p-6 md:!p-8 flex flex-col items-start h-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">Languages</span>
@@ -278,7 +278,7 @@ export default function Home() {
                 <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">RAG, LLM Integrations, Vector Embeddings, SentenceTransformers, NLP, Computer Vision</p>
               </TintedCard>
             </FadeIn>
-         </div>
+          </div>
         </section>
       </FadeIn>
 
@@ -286,67 +286,111 @@ export default function Home() {
       <FadeIn>
         <section id="work" className="px-6 md:px-12 max-w-6xl mx-auto space-y-10 mt-20 md:mt-40">
           <h2 className="text-3xl font-extrabold mb-12 px-6 tracking-tight text-black">Featured Projects</h2>
-        
-        <TintedCard type="blue" className="relative group overflow-hidden">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 relative z-10">
-            <div className="lg:w-1/2 flex flex-col justify-center">
-               <h3 className="text-3xl lg:text-4xl font-extrabold tracking-tight mb-4 lg:mb-6 text-black">Microservices E-commerce</h3>
-               <p className="text-lg lg:text-xl text-[#4D4D4D] leading-relaxed mb-8">
-                 Designed and implemented a highly-scalable event-driven backend system. 
-                 Utilized Kafka for event streaming and gRPC for blazing-fast inter-service communication.
-               </p>
-               
-               <a href="https://github.com/Jayasurya-T-Appu/Ecommerce_microservice_docker" target="_blank" rel="noopener noreferrer" className="mb-10 inline-block pointer-events-auto">
-                 <Button variant="primary" className="!px-8 !py-3.5 !text-xs !rounded-xl border-2 border-black/20 hover:border-black transition-all duration-300 shadow-lg">
-                   View Repository
-                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="ml-1"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                 </Button>
-               </a>
-               <div className="flex flex-wrap gap-3">
-                 <span className="bg-white/50 px-4 py-2 rounded-full text-sm font-bold text-black border border-black/5 backdrop-blur-sm">Node.js</span>
-                 <span className="bg-white/50 px-4 py-2 rounded-full text-sm font-bold text-black border border-black/5 backdrop-blur-sm">Kafka</span>
-                 <span className="bg-white/50 px-4 py-2 rounded-full text-sm font-bold text-black border border-black/5 backdrop-blur-sm">Docker</span>
-               </div>
-            </div>
 
-            <div className="hidden lg:flex lg:w-1/2 h-32 md:h-48 lg:h-auto min-h-[8rem] bg-white/40 rounded-[2rem] border border-black/5 items-center justify-center p-4 md:p-8 mt-2 lg:mt-0">
-               <div className="text-black/30 font-bold uppercase tracking-[0.2em] text-xs md:text-sm text-center">Architecture Diagram <span className="hidden md:inline"><br/></span> Component</div>
-            </div>
-          </div>
-        </TintedCard>
+          <TintedCard type="blue" className="relative group overflow-hidden">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 relative z-10">
+              <div className="lg:w-1/2 flex flex-col justify-center">
+                <h3 className="text-3xl lg:text-4xl font-extrabold tracking-tight mb-4 lg:mb-6 text-black">Microservices E-commerce</h3>
+                <p className="text-lg lg:text-xl text-[#4D4D4D] leading-relaxed mb-8">
+                  Designed and implemented a highly-scalable event-driven backend system.
+                  Utilized Kafka for event streaming and gRPC for blazing-fast inter-service communication.
+                </p>
 
-        <TintedCard type="mint" className="relative group overflow-hidden">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 relative z-10">
-            <div className="lg:w-1/2 flex flex-col justify-center">
-               <h3 className="text-3xl lg:text-4xl font-extrabold tracking-tight mb-4 lg:mb-6 text-black">AI Chat with RAG</h3>
-               <p className="text-lg lg:text-xl text-[#4D4D4D] leading-relaxed mb-8">
-                 Developed a sophisticated backend for semantic search. Integrated a local Mistral LLM and ChromaDB for instant vector retrieval against document embeddings.
-               </p>
-               
-               <a href="https://github.com/Jayasurya-T-Appu/RAG_AI-AGENT.git" target="_blank" rel="noopener noreferrer" className="mb-10 inline-block pointer-events-auto">
-                 <Button variant="primary" className="!px-8 !py-3.5 !text-xs !rounded-xl border-2 border-black/20 hover:border-black transition-all duration-300 shadow-lg">
-                   View Repository
-                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="ml-1"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                 </Button>
-               </a>
-               <div className="flex flex-wrap gap-3">
-                 <span className="bg-white/50 px-4 py-2 rounded-full text-sm font-bold text-black border border-black/5 backdrop-blur-sm">FastAPI</span>
-                 <span className="bg-white/50 px-4 py-2 rounded-full text-sm font-bold text-black border border-black/5 backdrop-blur-sm">Mistral LLM</span>
-                 <span className="bg-white/50 px-4 py-2 rounded-full text-sm font-bold text-black border border-black/5 backdrop-blur-sm">ChromaDB</span>
-               </div>
-            </div>
+                <a href="https://github.com/Jayasurya-T-Appu/Ecommerce_microservice_docker" target="_blank" rel="noopener noreferrer" className="mb-10 inline-block pointer-events-auto">
+                  <Button variant="primary" className="!px-8 !py-3.5 !text-xs !rounded-xl border-2 border-black/20 hover:border-black transition-all duration-300 shadow-lg">
+                    View Repository
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="ml-1"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+                  </Button>
+                </a>
+                <div className="flex flex-wrap gap-3">
+                  <span className="bg-white/50 px-4 py-2 rounded-full text-sm font-bold text-black border border-black/5 backdrop-blur-sm">Node.js</span>
+                  <span className="bg-white/50 px-4 py-2 rounded-full text-sm font-bold text-black border border-black/5 backdrop-blur-sm">Kafka</span>
+                  <span className="bg-white/50 px-4 py-2 rounded-full text-sm font-bold text-black border border-black/5 backdrop-blur-sm">Docker</span>
+                </div>
+              </div>
 
-            <div className="w-full lg:w-1/2 h-[280px] md:h-[320px] mt-8 lg:mt-0">
-              <ProjectGallery 
-                images={[
-                  { src: "/rag_project/login.png", alt: "Login Interface" },
-                  { src: "/rag_project/chat.png", alt: "Chat History" },
-                  { src: "/rag_project/chat2.png", alt: "Chat Interface" }
-                ]} 
-              />
+              <div className="hidden lg:flex lg:w-1/2 h-32 md:h-48 lg:h-auto min-h-[8rem] bg-white/40 rounded-[2rem] border border-black/5 items-center justify-center p-4 md:p-8 mt-2 lg:mt-0">
+                <div className="text-black/30 font-bold uppercase tracking-[0.2em] text-xs md:text-sm text-center">Architecture Diagram <span className="hidden md:inline"><br /></span> Component</div>
+              </div>
             </div>
-          </div>
-        </TintedCard>
+          </TintedCard>
+
+          <TintedCard type="mint" className="relative group overflow-hidden">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 relative z-10">
+              <div className="lg:w-1/2 flex flex-col justify-center">
+                <h3 className="text-3xl lg:text-4xl font-extrabold tracking-tight mb-4 lg:mb-6 text-black">AI Chat with RAG</h3>
+                <p className="text-lg lg:text-xl text-[#4D4D4D] leading-relaxed mb-8">
+                  Developed a sophisticated backend for semantic search. Integrated a local Mistral LLM and ChromaDB for instant vector retrieval against document embeddings.
+                </p>
+
+                <a href="https://github.com/Jayasurya-T-Appu/RAG_AI-AGENT.git" target="_blank" rel="noopener noreferrer" className="mb-10 inline-block pointer-events-auto">
+                  <Button variant="primary" className="!px-8 !py-3.5 !text-xs !rounded-xl border-2 border-black/20 hover:border-black transition-all duration-300 shadow-lg">
+                    View Repository
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="ml-1"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+                  </Button>
+                </a>
+                <div className="flex flex-wrap gap-3">
+                  <span className="bg-white/50 px-4 py-2 rounded-full text-sm font-bold text-black border border-black/5 backdrop-blur-sm">FastAPI</span>
+                  <span className="bg-white/50 px-4 py-2 rounded-full text-sm font-bold text-black border border-black/5 backdrop-blur-sm">Mistral LLM</span>
+                  <span className="bg-white/50 px-4 py-2 rounded-full text-sm font-bold text-black border border-black/5 backdrop-blur-sm">ChromaDB</span>
+                </div>
+              </div>
+
+              <div className="w-full lg:w-1/2 h-[280px] md:h-[320px] mt-8 lg:mt-0">
+                <ProjectGallery
+                  images={[
+                    { src: "/rag_project/login.png", alt: "Login Interface" },
+                    { src: "/rag_project/chat.png", alt: "Chat History" },
+                    { src: "/rag_project/chat2.png", alt: "Chat Interface" }
+                  ]}
+                />
+              </div>
+            </div>
+          </TintedCard>
+
+          <TintedCard type="peach" className="relative group overflow-hidden">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 relative z-10">
+              <div className="lg:w-1/2 flex flex-col justify-center">
+                <h3 className="text-3xl lg:text-4xl font-extrabold tracking-tight mb-4 lg:mb-6 text-black">Forge Build Tool</h3>
+                <p className="text-lg lg:text-xl text-[#4D4D4D] leading-relaxed mb-8">
+                  A lightweight compiler driver and native build system written in C. Recursively scans project directories, generates a dependency build plan, automatically structures the build directories, compiles files via GCC, and links them into a final executable.
+                </p>
+
+                <a href="https://github.com/Jayasurya-T-Appu/forge-tool-.git" target="_blank" rel="noopener noreferrer" className="mb-10 inline-block pointer-events-auto">
+                  <Button variant="primary" className="!px-8 !py-3.5 !text-xs !rounded-xl border-2 border-black/20 hover:border-black transition-all duration-300 shadow-lg">
+                    View Repository
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="ml-1"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+                  </Button>
+                </a>
+                <div className="flex flex-wrap gap-3">
+                  <span className="bg-white/50 px-4 py-2 rounded-full text-sm font-bold text-black border border-black/5 backdrop-blur-sm">C</span>
+                  <span className="bg-white/50 px-4 py-2 rounded-full text-sm font-bold text-black border border-black/5 backdrop-blur-sm">GCC</span>
+                  <span className="bg-white/50 px-4 py-2 rounded-full text-sm font-bold text-black border border-black/5 backdrop-blur-sm">Systems Programming</span>
+                </div>
+              </div>
+
+              <div className="w-full lg:w-1/2 h-[280px] md:h-[320px] mt-8 lg:mt-0 flex items-center justify-center p-4">
+                <div className="relative w-full h-full rounded-[1.2rem] overflow-hidden border border-black/10 bg-white shadow-xl flex flex-col">
+                  {/* Window Header */}
+                  <div className="h-6 bg-[#1A1A1A] border-b border-white/5 flex items-center px-3 gap-1.5 shrink-0">
+                    <div className="w-1.5 h-1.5 rounded-full bg-white/70" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-white/50" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-white/30" />
+                  </div>
+
+                  <div className="relative flex-1 bg-[#1E1E1E]">
+                    <Image
+                      src="/forgeTool.webp"
+                      alt="Forge Build Tool Interface"
+                      fill
+                      className="object-cover p-2"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </TintedCard>
         </section>
       </FadeIn>
 
@@ -358,13 +402,13 @@ export default function Home() {
             <a href="mailto:jayasuryawebdev@gmail.com" target="_blank" rel="noopener noreferrer"><Button className="!px-12 !py-6 !text-lg mx-auto sm:mx-0">Get in touch</Button></a>
             <a href={RESUME_PATH} download={RESUME_DOWNLOAD_NAME}><Button variant="secondary" className="!px-12 !py-6 !text-lg mx-auto sm:mx-0">Download resume</Button></a>
           </div>
-          
+
           <div className="flex gap-6 items-center justify-center mt-6 md:mt-12">
             <a href="https://github.com/Jayasurya-T-Appu" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="p-4 bg-white border border-black/5 rounded-full hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all duration-300 text-black">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
             </a>
             <a href="https://www.linkedin.com/in/jayasuryatappu/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="p-4 bg-white border border-black/5 rounded-full hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all duration-300 text-black">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
             </a>
           </div>
         </section>
@@ -386,10 +430,10 @@ export default function Home() {
 
           <div className="flex gap-4">
             <a href="https://github.com/Jayasurya-T-Appu" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="p-3 bg-white/10 border border-white/10 rounded-full hover:-translate-y-1 hover:bg-white/20 transition-all duration-300 text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
             </a>
             <a href="https://www.linkedin.com/in/jayasuryatappu/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="p-3 bg-white/10 border border-white/10 rounded-full hover:-translate-y-1 hover:bg-white/20 transition-all duration-300 text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
             </a>
           </div>
         </div>
