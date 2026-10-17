@@ -16,8 +16,8 @@ export default function Home() {
       <Nav />
 
 
-      <FadeIn delay={2200}>
-        <section id="about" className="pt-32 md:pt-48 pb-10 md:pb-32 px-6 md:px-12 max-w-6xl mx-auto flex flex-col items-center text-center">
+      <section id="about" className="pt-32 md:pt-48 pb-10 md:pb-32 px-6 md:px-12 max-w-6xl mx-auto">
+        <FadeIn delay={2200} className="flex flex-col items-center text-center">
           <div className="w-40 h-56 md:w-52 md:h-72 rounded-[2rem] overflow-hidden mb-8 md:mb-12 shadow-[0_12px_40px_rgba(0,0,0,0.08)] bg-white p-1">
             <div className="w-full h-full rounded-[1.8rem] overflow-hidden relative">
               <Image src="/profile_pic.webp" alt="Jayasurya T Appu" fill priority className="object-cover object-top" sizes="(max-width: 768px) 200px, 260px" />
@@ -69,12 +69,12 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </section>
-      </FadeIn>
+        </FadeIn>
+      </section>
 
 
-      <FadeIn>
-        <section id="experience" className="px-6 md:px-12 max-w-6xl mx-auto mt-10 md:mt-20">
+      <section id="experience" className="px-6 md:px-12 max-w-6xl mx-auto mt-10 md:mt-20">
+        <FadeIn>
           <h2 className="text-3xl font-extrabold mb-12 px-6 tracking-tight text-black">Experience</h2>
 
           <div className="space-y-10">
@@ -85,10 +85,33 @@ export default function Home() {
 
                 <Card className="flex flex-col lg:flex-row gap-12 group">
                   <div className="lg:w-1/3">
+                    <div className="md:hidden inline-block mb-2 px-2.5 py-1 rounded-full bg-black/5 text-[11px] font-bold text-black/60 tracking-wider">2026</div>
+                    <h4 className="text-2xl font-bold tracking-tight mb-2 text-black">Spericorn</h4>
+                    <div className="text-[#4D4D4D] font-medium uppercase tracking-widest text-sm mb-4">Senior Node.js Developer</div>
+                    <p className="text-black/40 text-sm font-bold tracking-wider">AUG 2026 – PRESENT</p>
+                  </div>
+                  <div className="lg:w-2/3">
+                    <ul className="space-y-4 text-lg text-[#4D4D4D] leading-relaxed relative">
+                      <li className="pl-6 relative before:absolute before:left-0 before:top-3 before:w-1.5 before:h-1.5 before:bg-black before:rounded-full">
+                        Developing and maintaining <strong className="text-black font-bold">Node.js backend services</strong>.
+                      </li>
+                    </ul>
+                  </div>
+                </Card>
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={0}>
+              <div className="relative pl-0 md:pl-28">
+                <span className="hidden md:block absolute left-2 top-3 bottom-[-52px] w-0.5 bg-black/30" aria-hidden />
+                <span className="hidden md:block absolute left-0 top-3 w-4 h-4 rounded-full bg-black ring-4 ring-[#F2F2F2]" aria-hidden />
+
+                <Card className="flex flex-col lg:flex-row gap-12 group">
+                  <div className="lg:w-1/3">
                     <div className="md:hidden inline-block mb-2 px-2.5 py-1 rounded-full bg-black/5 text-[11px] font-bold text-black/60 tracking-wider">2025</div>
                     <h4 className="text-2xl font-bold tracking-tight mb-2 text-black">Carclenx (Pexa)</h4>
                     <div className="text-[#4D4D4D] font-medium uppercase tracking-widest text-sm mb-4">Software Engineer</div>
-                    <p className="text-black/40 text-sm font-bold tracking-wider">JULY 2025 – PRESENT</p>
+                    <p className="text-black/40 text-sm font-bold tracking-wider">JULY 2025 – AUG 2026</p>
                   </div>
                   <div className="lg:w-2/3">
                     <ul className="space-y-4 text-lg text-[#4D4D4D] leading-relaxed relative">
@@ -244,13 +267,13 @@ export default function Home() {
               </div>
             </FadeIn>
           </div>
-        </section>
-      </FadeIn>
+        </FadeIn>
+      </section>
 
 
 
-      <FadeIn>
-        <section id="skills" className="px-6 md:px-12 max-w-6xl mx-auto space-y-10 mt-20 md:mt-40">
+      <section id="skills" className="px-6 md:px-12 max-w-6xl mx-auto mt-20 md:mt-40">
+        <FadeIn className="space-y-10">
           <h2 className="text-3xl font-extrabold mb-12 px-6 tracking-tight text-black">Technical Arsenal</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <FadeIn delay={0}>
@@ -309,12 +332,12 @@ export default function Home() {
               </TintedCard>
             </FadeIn>
           </div>
-        </section>
-      </FadeIn>
+        </FadeIn>
+      </section>
 
 
-      <FadeIn>
-        <section id="work" className="px-6 md:px-12 max-w-6xl mx-auto space-y-10 mt-20 md:mt-40">
+      <section id="work" className="px-6 md:px-12 max-w-6xl mx-auto mt-20 md:mt-40">
+        <FadeIn className="space-y-10">
           <h2 className="text-3xl font-extrabold mb-12 px-6 tracking-tight text-black">Featured Projects</h2>
 
           <TintedCard type="blue" className="relative group overflow-hidden">
@@ -421,8 +444,8 @@ export default function Home() {
               </div>
             </div>
           </TintedCard>
-        </section>
-      </FadeIn>
+        </FadeIn>
+      </section>
 
 
       <FadeIn>
