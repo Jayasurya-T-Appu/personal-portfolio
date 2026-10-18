@@ -32,7 +32,7 @@ export function Loader() {
         </div>
         
         <p className="text-[10px] md:text-xs font-bold uppercase tracking-[0.4em] text-black animate-[fadeIn_0.8s_ease-out_1.2s_forwards] opacity-0 select-none">
-          Jayasurya Appu
+          Jayasurya T Appu
         </p>
       </div>
       
