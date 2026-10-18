@@ -1,5 +1,4 @@
 import { Card, TintedCard } from "../components/Card";
-import { ProjectGallery } from "../components/ProjectGallery";
 import { Button } from "../components/Button";
 import { Nav } from "../components/Nav";
 import { ScrollToTop } from "../components/ScrollToTop";
@@ -8,6 +7,8 @@ import { Loader } from "../components/Loader";
 import { FadeIn } from "../components/FadeIn";
 import { Timeline, TimelineDot } from "../components/Timeline";
 import { ArchitectureDiagram } from "../components/ArchitectureDiagram";
+import { RagPipelineDiagram } from "../components/RagPipelineDiagram";
+import { ForgeBuildDiagram } from "../components/ForgeBuildDiagram";
 import { ParallaxCTA } from "../components/ParallaxCTA";
 import { RESUME_DOWNLOAD_NAME, RESUME_PATH } from "../constants/resume";
 import Image from "next/image";
@@ -391,14 +392,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="w-full lg:w-1/2 h-[280px] md:h-[320px] mt-8 lg:mt-0">
-                <ProjectGallery
-                  images={[
-                    { src: "/rag_project/login.png", alt: "Login Interface" },
-                    { src: "/rag_project/chat.png", alt: "Chat History" },
-                    { src: "/rag_project/chat2.png", alt: "Chat Interface" }
-                  ]}
-                />
+              <div className="w-full lg:w-1/2 flex items-center mt-2 lg:mt-0">
+                <RagPipelineDiagram />
               </div>
             </div>
           </TintedCard>
@@ -424,25 +419,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="w-full lg:w-1/2 h-[280px] md:h-[320px] mt-8 lg:mt-0 flex items-center justify-center p-4">
-                <div className="relative w-full h-full rounded-[1.2rem] overflow-hidden border border-black/10 bg-white shadow-xl flex flex-col">
-                  {/* Window Header */}
-                  <div className="h-6 bg-[#1A1A1A] border-b border-white/5 flex items-center px-3 gap-1.5 shrink-0">
-                    <div className="w-1.5 h-1.5 rounded-full bg-white/70" />
-                    <div className="w-1.5 h-1.5 rounded-full bg-white/50" />
-                    <div className="w-1.5 h-1.5 rounded-full bg-white/30" />
-                  </div>
-
-                  <div className="relative flex-1 bg-[#1E1E1E]">
-                    <Image
-                      src="/forgeTool.webp"
-                      alt="Forge – Build Automation Tool Interface"
-                      fill
-                      className="object-cover p-2"
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                    />
-                  </div>
-                </div>
+              <div className="w-full lg:w-1/2 flex items-center mt-2 lg:mt-0">
+                <ForgeBuildDiagram />
               </div>
             </div>
           </TintedCard>

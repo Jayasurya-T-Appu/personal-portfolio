@@ -44,3 +44,9 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
 }
+/* Animated project diagrams: hide moving parts for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .diagram-motion {
+    display: none;
+  }
+}

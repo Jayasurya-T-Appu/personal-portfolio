@@ -1,3 +1,5 @@
+import { DiagramFrame, Packet } from "./diagram/smil";
+
 /**
  * Animated architecture diagram for the Distributed Commerce Platform project.
  * Pure SVG + SMIL (<animateMotion>), so it needs no JS and runs on the server-rendered page.
@@ -62,40 +64,14 @@ function Node({ b }: { b: Box }) {
 
 const CYCLE = 3.6; // seconds for one request → event round trip; every packet shares this clock
 
-/** A packet that travels `path` during [start, start + travel] seconds of each CYCLE. */
-function Packet({ path, start, travel, r = 3 }: { path: string; start: number; travel: number; r?: number }) {
-  const t0 = +(start / CYCLE).toFixed(4);
-  const t1 = +(Math.min(start + travel, CYCLE) / CYCLE).toFixed(4);
-  const fadeIn = +Math.min(t0 + 0.02, t1).toFixed(4);
-  const fadeOut = +Math.max(t1 - 0.02, fadeIn).toFixed(4);
-  return (
-    <circle r={r} className="arch-packet fill-black" opacity={0}>
-      <animateMotion dur={`${CYCLE}s`} repeatCount="indefinite" path={path} keyPoints="0;0;1;1" keyTimes={`0;${t0};${t1};1`} calcMode="linear" />
-      <animate attributeName="opacity" dur={`${CYCLE}s`} repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes={`0;${t0};${fadeIn};${fadeOut};${t1};1`} />
-    </circle>
-  );
-}
-
 export function ArchitectureDiagram({ className = "" }: { className?: string }) {
   return (
-    <div className={`relative w-full rounded-[2rem] bg-white/50 border border-black/5 p-4 md:p-6 ${className}`}>
-      <div className="flex items-center justify-between mb-2 px-1">
-        <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-black/40">System Architecture</span>
-        <span className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-black/40">
-          <span className="relative flex h-1.5 w-1.5">
-            <span className="arch-pulse absolute inline-flex h-full w-full rounded-full bg-black/40 animate-ping" />
-            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-black" />
-          </span>
-          Live
-        </span>
-      </div>
-
-      <svg
-        viewBox="0 0 400 332"
-        className="w-full h-auto font-sans"
-        role="img"
-        aria-label="Event-driven architecture: client requests pass through an API gateway to Orders, Catalog and Users services over gRPC; services publish events to Kafka, consumed by Inventory, Payments and Notify workers."
-      >
+    <DiagramFrame
+      className={className}
+      label="System Architecture"
+      viewBox="0 0 400 332"
+      ariaLabel="Event-driven architecture: client requests pass through an API gateway to Orders, Catalog and Users services over gRPC; services publish events to Kafka, consumed by Inventory, Payments and Notify workers."
+    >
         {/* Docker boundary around the services */}
         <rect x={18} y={146} width={364} height={58} rx={14} fill="none" className="stroke-black/20" strokeDasharray="4 5" />
         <text x={26} y={142} className="text-[8px] font-mono fill-black/40 uppercase tracking-widest">docker · services</text>
@@ -114,7 +90,7 @@ export function ArchitectureDiagram({ className = "" }: { className?: string }) 
         <text x={KAFKA.x + 12} y={KAFKA.y + 17} className="text-[10px] font-bold fill-white tracking-wider">KAFKA</text>
         <text x={KAFKA.x + KAFKA.w - 12} y={KAFKA.y + 17} textAnchor="end" className="text-[8px] font-mono fill-white/50">order.created · stock.updated</text>
         {/* Event stream moving along the bus */}
-        <g className="arch-packet">
+        <g className="diagram-motion">
           {[0, 1, 2, 3].map((i) => (
             <rect key={i} y={KAFKA.y + 11} width={10} height={4} rx={2} className="fill-white/30">
               <animate attributeName="x" from={KAFKA.x + 70} to={KAFKA.x + KAFKA.w - 150} dur="2.4s" begin={`${i * 0.6}s`} repeatCount="indefinite" />
@@ -129,17 +105,10 @@ export function ArchitectureDiagram({ className = "" }: { className?: string }) 
         {CONSUMERS.map((c) => <Node key={c.label} b={c} />)}
 
         {/* Packets: one request fans out over gRPC, then becomes events on Kafka */}
-        <Packet path={P_CLIENT} start={0} travel={0.5} />
-        {P_RPC.map((d, i) => <Packet key={`prpc${i}`} path={d} start={0.5 + i * 0.1} travel={0.7} />)}
-        {P_PUB.map((d, i) => <Packet key={`ppub${i}`} path={d} start={1.4 + i * 0.1} travel={0.45} r={2.5} />)}
-        {P_SUB.map((d, i) => <Packet key={`psub${i}`} path={d} start={2.1 + i * 0.12} travel={0.45} r={2.5} />)}
-      </svg>
-
-      <style>{`
-        @media (prefers-reduced-motion: reduce) {
-          .arch-packet, .arch-pulse { display: none; }
-        }
-      `}</style>
-    </div>
+        <Packet path={P_CLIENT} start={0} travel={0.5} cycle={CYCLE} />
+        {P_RPC.map((d, i) => <Packet key={`prpc${i}`} path={d} start={0.5 + i * 0.1} travel={0.7} cycle={CYCLE} />)}
+        {P_PUB.map((d, i) => <Packet key={`ppub${i}`} path={d} start={1.4 + i * 0.1} travel={0.45} r={2.5} cycle={CYCLE} />)}
+        {P_SUB.map((d, i) => <Packet key={`psub${i}`} path={d} start={2.1 + i * 0.12} travel={0.45} r={2.5} cycle={CYCLE} />)}
+    </DiagramFrame>
   );
 }
