@@ -1,11 +1,15 @@
 import { Card, TintedCard } from "../components/Card";
-import { ProjectGallery } from "../components/ProjectGallery";
 import { Button } from "../components/Button";
 import { Nav } from "../components/Nav";
 import { ScrollToTop } from "../components/ScrollToTop";
 import { WhatsAppButton } from "../components/WhatsAppButton";
 import { Loader } from "../components/Loader";
 import { FadeIn } from "../components/FadeIn";
+import { Timeline, TimelineDot } from "../components/Timeline";
+import { ArchitectureDiagram } from "../components/ArchitectureDiagram";
+import { RagPipelineDiagram } from "../components/RagPipelineDiagram";
+import { ForgeBuildDiagram } from "../components/ForgeBuildDiagram";
+import { ParallaxCTA } from "../components/ParallaxCTA";
 import { RESUME_DOWNLOAD_NAME, RESUME_PATH } from "../constants/resume";
 import Image from "next/image";
 
@@ -25,7 +29,10 @@ export default function Home() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-[5.5rem] font-extrabold tracking-tight leading-[1.1] mb-8 md:mb-10 text-black">
-            Architecting Scalable <br /> Backend Systems.
+            Architecting Scalable <br />
+            <span className="text-transparent [-webkit-text-stroke:1.5px_#000] md:[-webkit-text-stroke:2px_#000] transition-colors duration-500 hover:text-black">
+              Backend Systems.
+            </span>
           </h1>
 
           <p className="text-lg md:text-2xl text-[#4D4D4D] max-w-3xl font-light mb-10 md:mb-14 leading-relaxed tracking-wide">
@@ -77,11 +84,10 @@ export default function Home() {
         <FadeIn>
           <h2 className="text-3xl font-extrabold mb-12 px-6 tracking-tight text-black">Experience</h2>
 
-          <div className="space-y-10">
+          <Timeline className="space-y-10">
             <FadeIn delay={0}>
               <div className="relative pl-0 md:pl-28">
-                <span className="hidden md:block absolute left-2 top-3 bottom-[-52px] w-0.5 bg-black/30" aria-hidden />
-                <span className="hidden md:block absolute left-0 top-3 w-4 h-4 rounded-full bg-black ring-4 ring-[#F2F2F2]" aria-hidden />
+                <TimelineDot />
 
                 <Card className="flex flex-col lg:flex-row gap-12 group">
                   <div className="lg:w-1/3">
@@ -103,8 +109,7 @@ export default function Home() {
 
             <FadeIn delay={0}>
               <div className="relative pl-0 md:pl-28">
-                <span className="hidden md:block absolute left-2 top-3 bottom-[-52px] w-0.5 bg-black/30" aria-hidden />
-                <span className="hidden md:block absolute left-0 top-3 w-4 h-4 rounded-full bg-black ring-4 ring-[#F2F2F2]" aria-hidden />
+                <TimelineDot />
 
                 <Card className="flex flex-col lg:flex-row gap-12 group">
                   <div className="lg:w-1/3">
@@ -153,8 +158,7 @@ export default function Home() {
 
             <FadeIn delay={120}>
               <div className="relative pl-0 md:pl-28">
-                <span className="hidden md:block absolute left-2 top-3 bottom-[-52px] w-0.5 bg-black/30" aria-hidden />
-                <span className="hidden md:block absolute left-0 top-3 w-4 h-4 rounded-full bg-black ring-4 ring-[#F2F2F2]" aria-hidden />
+                <TimelineDot />
 
                 <Card className="flex flex-col lg:flex-row gap-12 group">
                   <div className="lg:w-1/3">
@@ -191,8 +195,7 @@ export default function Home() {
 
             <FadeIn delay={240}>
               <div className="relative pl-0 md:pl-28">
-                <span className="hidden md:block absolute left-2 top-3 bottom-[-52px] w-0.5 bg-black/30" aria-hidden />
-                <span className="hidden md:block absolute left-0 top-3 w-4 h-4 rounded-full bg-black ring-4 ring-[#F2F2F2]" aria-hidden />
+                <TimelineDot />
 
                 <Card className="flex flex-col lg:flex-row gap-12 group">
                   <div className="lg:w-1/3">
@@ -235,7 +238,7 @@ export default function Home() {
 
             <FadeIn delay={360}>
               <div className="relative pl-0 md:pl-28">
-                <span className="hidden md:block absolute left-0 top-3 w-4 h-4 rounded-full bg-black ring-4 ring-[#F2F2F2]" aria-hidden />
+                <TimelineDot />
 
                 <Card className="flex flex-col lg:flex-row gap-12 group">
                   <div className="lg:w-1/3">
@@ -266,7 +269,7 @@ export default function Home() {
                 </Card>
               </div>
             </FadeIn>
-          </div>
+          </Timeline>
         </FadeIn>
       </section>
 
@@ -362,8 +365,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="hidden lg:flex lg:w-1/2 h-32 md:h-48 lg:h-auto min-h-[8rem] bg-white/40 rounded-[2rem] border border-black/5 items-center justify-center p-4 md:p-8 mt-2 lg:mt-0">
-                <div className="text-black/30 font-bold uppercase tracking-[0.2em] text-xs md:text-sm text-center">Architecture Diagram <span className="hidden md:inline"><br /></span> Component</div>
+              <div className="w-full lg:w-1/2 flex items-center mt-2 lg:mt-0">
+                <ArchitectureDiagram />
               </div>
             </div>
           </TintedCard>
@@ -389,14 +392,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="w-full lg:w-1/2 h-[280px] md:h-[320px] mt-8 lg:mt-0">
-                <ProjectGallery
-                  images={[
-                    { src: "/rag_project/login.png", alt: "Login Interface" },
-                    { src: "/rag_project/chat.png", alt: "Chat History" },
-                    { src: "/rag_project/chat2.png", alt: "Chat Interface" }
-                  ]}
-                />
+              <div className="w-full lg:w-1/2 flex items-center mt-2 lg:mt-0">
+                <RagPipelineDiagram />
               </div>
             </div>
           </TintedCard>
@@ -422,25 +419,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="w-full lg:w-1/2 h-[280px] md:h-[320px] mt-8 lg:mt-0 flex items-center justify-center p-4">
-                <div className="relative w-full h-full rounded-[1.2rem] overflow-hidden border border-black/10 bg-white shadow-xl flex flex-col">
-                  {/* Window Header */}
-                  <div className="h-6 bg-[#1A1A1A] border-b border-white/5 flex items-center px-3 gap-1.5 shrink-0">
-                    <div className="w-1.5 h-1.5 rounded-full bg-white/70" />
-                    <div className="w-1.5 h-1.5 rounded-full bg-white/50" />
-                    <div className="w-1.5 h-1.5 rounded-full bg-white/30" />
-                  </div>
-
-                  <div className="relative flex-1 bg-[#1E1E1E]">
-                    <Image
-                      src="/forgeTool.webp"
-                      alt="Forge – Build Automation Tool Interface"
-                      fill
-                      className="object-cover p-2"
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                    />
-                  </div>
-                </div>
+              <div className="w-full lg:w-1/2 flex items-center mt-2 lg:mt-0">
+                <ForgeBuildDiagram />
               </div>
             </div>
           </TintedCard>
@@ -449,7 +429,7 @@ export default function Home() {
 
 
       <FadeIn>
-        <section className="mt-20 md:mt-40 text-center pb-3">
+        <ParallaxCTA className="mt-10 md:mt-20 text-center py-24 md:py-40">
           <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-12 text-black">Let&apos;s build something great.</h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5">
             <a href="mailto:jayasuryawebdev@gmail.com" target="_blank" rel="noopener noreferrer"><Button className="!px-12 !py-6 !text-lg mx-auto sm:mx-0">Get in touch</Button></a>
@@ -464,10 +444,10 @@ export default function Home() {
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
             </a>
           </div>
-        </section>
+        </ParallaxCTA>
       </FadeIn>
 
-      <footer className="mt-20 md:mt-32 bg-black text-white">
+      <footer className="bg-black text-white">
         <div className="max-w-6xl mx-auto px-6 md:px-12 py-10 md:py-14 flex flex-col md:flex-row items-center md:items-start justify-between gap-8 text-center md:text-left">
           <div>
             <p className="text-lg font-extrabold tracking-tight text-white">Jayasurya T Appu</p>
@@ -489,6 +469,12 @@ export default function Home() {
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
             </a>
           </div>
+        </div>
+
+        <div className="overflow-hidden px-4 select-none" aria-hidden>
+          <p className="text-center font-black lowercase tracking-[-0.06em] leading-[0.8] text-[19vw] lg:text-[13rem] text-white/[0.07] translate-y-[12%]">
+            jayasurya
+          </p>
         </div>
 
         <div className="border-t border-white/10 py-6 text-center text-xs text-white/40 tracking-wide">

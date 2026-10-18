@@ -13,7 +13,7 @@ export function Loader() {
     }
     const timer = setTimeout(() => {
       setLoading(false);
-      setTimeout(() => setMounted(false), 800); 
+      setTimeout(() => setMounted(false), 1000); 
     }, 2200);
     
     return () => clearTimeout(timer);
@@ -23,9 +23,9 @@ export function Loader() {
 
   return (
     <div 
-      className={`fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#F2F2F2] transition-all duration-[1000ms] ease-in-out ${loading ? 'opacity-100 scale-100' : 'opacity-0 scale-[8] pointer-events-none'}`}
+      className={`fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#F2F2F2] shadow-[0_30px_60px_rgba(0,0,0,0.12)] transition-transform duration-[1000ms] ease-[cubic-bezier(0.76,0,0.24,1)] ${loading ? 'translate-y-0' : '-translate-y-full pointer-events-none'}`}
     >
-      <div className="flex flex-col items-center">
+      <div className={`flex flex-col items-center transition-all duration-500 ease-out ${loading ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'}`}>
         <div className="relative text-[10rem] md:text-[14rem] font-black leading-none mb-4 select-none flex items-center justify-center">
           <span className="absolute text-transparent font-sans" style={{ WebkitTextStroke: '3px rgba(0,0,0,0.1)' }}>J</span>
           <span className="relative z-10 text-transparent bg-clip-text animate-fill-j font-sans">J</span>
