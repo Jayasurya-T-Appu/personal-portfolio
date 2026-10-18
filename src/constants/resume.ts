@@ -1,2 +1,4 @@
-export const RESUME_PATH = "/Jayasurya_T_Appu_Senior_NodeJS_Backend_Developer.pdf";
-export const RESUME_DOWNLOAD_NAME = "Jayasurya_T_Appu_Senior_NodeJS_Backend_Developer.pdf";
+const RESUME_FILE = "Jayasurya_T_Appu-Senior Backend Engineer Resume.pdf";
+
+export const RESUME_PATH = `/${encodeURIComponent(RESUME_FILE)}`;
+export const RESUME_DOWNLOAD_NAME = RESUME_FILE;
