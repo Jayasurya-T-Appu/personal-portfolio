@@ -44,6 +44,38 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
 }
+
+/* Swarm build (Technical Arsenal): placeholder box drawn from top-left, then handles/label pop in */
+.swarm-draw {
+  animation: swarm-draw cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.swarm-pop {
+  animation: swarm-pop 220ms ease-out both;
+}
+
+@keyframes swarm-draw {
+  from {
+    clip-path: inset(0 100% 100% 0);
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes swarm-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 /* Animated project diagrams: hide moving parts for users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .diagram-motion {

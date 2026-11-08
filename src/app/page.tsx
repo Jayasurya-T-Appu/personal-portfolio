@@ -5,6 +5,7 @@ import { ScrollToTop } from "../components/ScrollToTop";
 import { WhatsAppButton } from "../components/WhatsAppButton";
 import { Loader } from "../components/Loader";
 import { FadeIn } from "../components/FadeIn";
+import { SwarmBuild, SwarmLayer } from "../components/SwarmBuild";
 import { Timeline, TimelineDot } from "../components/Timeline";
 import { ArchitectureDiagram } from "../components/ArchitectureDiagram";
 import { RagPipelineDiagram } from "../components/RagPipelineDiagram";
@@ -276,66 +277,68 @@ export default function Home() {
 
 
       <section id="skills" className="px-6 md:px-12 max-w-6xl mx-auto mt-20 md:mt-40">
-        <FadeIn className="space-y-10">
-          <h2 className="text-3xl font-extrabold mb-12 px-6 tracking-tight text-black">Technical Arsenal</h2>
+        <SwarmBuild className="space-y-10">
+          <SwarmLayer index={0} className="w-fit" radius="rounded-lg">
+            <h2 className="text-3xl font-extrabold mb-12 px-6 tracking-tight text-black">Technical Arsenal</h2>
+          </SwarmLayer>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            <FadeIn delay={0}>
+            <SwarmLayer index={1}>
               <TintedCard shine type="gray" className="!p-6 md:!p-8 flex flex-col items-start h-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">Languages</span>
-                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">JavaScript (ES6+), TypeScript, SQL, C</p>
+                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left">JavaScript (ES6+), TypeScript, SQL, C</p>
               </TintedCard>
-            </FadeIn>
+            </SwarmLayer>
 
-            <FadeIn delay={80}>
+            <SwarmLayer index={2}>
               <TintedCard shine type="mint" className="!p-6 md:!p-8 flex flex-col items-start h-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">Backend</span>
-                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">Node.js, Express.js, REST APIs, Redis Streams, Asynchronous Processing, FSM</p>
+                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left">Node.js, Express.js, REST APIs, Redis Streams, Asynchronous Processing, FSM</p>
               </TintedCard>
-            </FadeIn>
+            </SwarmLayer>
 
-            <FadeIn delay={160}>
+            <SwarmLayer index={3}>
               <TintedCard shine type="blue" className="!p-6 md:!p-8 flex flex-col items-start h-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">Frontend</span>
-                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">Angular, React.js, HTML5, CSS3</p>
+                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left">Angular, React.js, HTML5, CSS3</p>
               </TintedCard>
-            </FadeIn>
+            </SwarmLayer>
 
-            <FadeIn delay={240}>
+            <SwarmLayer index={4}>
               <TintedCard shine type="peach" className="!p-6 md:!p-8 flex flex-col items-start h-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">Architecture</span>
-                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">RESTful API Design, Clean Architecture, Database Schema Design, Distributed Systems</p>
+                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left">RESTful API Design, Clean Architecture, Database Schema Design, Distributed Systems</p>
               </TintedCard>
-            </FadeIn>
+            </SwarmLayer>
 
-            <FadeIn delay={320}>
+            <SwarmLayer index={5}>
               <TintedCard shine type="gray" className="!p-6 md:!p-8 flex flex-col items-start h-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">Database &amp; Data</span>
-                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">MongoDB, MySQL, Redis</p>
+                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left">MongoDB, MySQL, Redis</p>
               </TintedCard>
-            </FadeIn>
+            </SwarmLayer>
 
-            <FadeIn delay={400}>
+            <SwarmLayer index={6}>
               <TintedCard shine type="mint" className="!p-6 md:!p-8 flex flex-col items-start h-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">Cloud &amp; Infrastructure</span>
-                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">AWS (Basics), Vercel, Docker, Nginx</p>
+                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left">AWS (Basics), Vercel, Docker, Nginx</p>
               </TintedCard>
-            </FadeIn>
+            </SwarmLayer>
 
-            <FadeIn delay={480}>
+            <SwarmLayer index={7}>
               <TintedCard shine type="blue" className="!p-6 md:!p-8 flex flex-col items-start h-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">Tools &amp; Workflow</span>
-                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">Git, GitHub, Postman, Linux, VS Code</p>
+                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left">Git, GitHub, Postman, Linux, VS Code</p>
               </TintedCard>
-            </FadeIn>
+            </SwarmLayer>
 
-            <FadeIn delay={560}>
+            <SwarmLayer index={8}>
               <TintedCard shine type="peach" className="!p-6 md:!p-8 flex flex-col items-start h-full">
                 <span className="text-xs font-bold uppercase tracking-widest text-black/50 mb-4">AI &amp; ML</span>
-                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left mt-auto">Retrieval-Augmented Generation (RAG), Vector Embeddings, ChromaDB, Hugging Face, LLMs</p>
+                <p className="text-base md:text-lg font-bold tracking-tight leading-snug text-black text-left">Retrieval-Augmented Generation (RAG), Vector Embeddings, ChromaDB, Hugging Face, LLMs</p>
               </TintedCard>
-            </FadeIn>
+            </SwarmLayer>
           </div>
-        </FadeIn>
+        </SwarmBuild>
       </section>
 
 
